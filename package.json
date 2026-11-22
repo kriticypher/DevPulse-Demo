@@ -1,0 +1,32 @@
+{
+  "name": "devpulse-demo",
+  "version": "1.0.0",
+  "description": "Demonstration and audit showcase repository for the kriti-devpulse npm package",
+  "main": "scripts/run-all-demos.js",
+  "scripts": {
+    "setup": "node scripts/setup-demo.js",
+    "demo:healthy": "npx kriti-devpulse audit ./demo-projects/healthy-project",
+    "demo:warning": "npx kriti-devpulse audit ./demo-projects/warning-project",
+    "demo:unhealthy": "npx kriti-devpulse audit ./demo-projects/unhealthy-project",
+    "demo:all": "node scripts/run-all-demos.js",
+    "report:healthy": "npx kriti-devpulse audit ./demo-projects/healthy-project --output json --file ./reports/healthy-project-report.json",
+    "report:warning": "npx kriti-devpulse audit ./demo-projects/warning-project --output json --file ./reports/warning-project-report.json",
+    "report:unhealthy": "npx kriti-devpulse audit ./demo-projects/unhealthy-project --output json --file ./reports/unhealthy-project-report.json",
+    "report:all": "npm run report:healthy && npm run report:warning && npm run report:unhealthy"
+  },
+  "keywords": [
+    "devpulse",
+    "audit",
+    "node-health",
+    "npm-showcase",
+    "code-quality"
+  ],
+  "author": "Kriti Maurya <mkritimaurya1@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "kriti-devpulse": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
