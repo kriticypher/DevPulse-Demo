@@ -1,0 +1,51 @@
+
+╭──────────────────────────────────────────────────────────────────────────────╮│                                                                              ││   DevPulse  |  devpulse-healthy-demo@1.0.0                                   ││   /Users/kritimaurya/Documents/PROJECTS/DevPulse-Demo/demo-projects/health   ││   y-project                                                                  ││                                                                              │╰──────────────────────────────────────────────────────────────────────────────╯
+
+╔═══════════════════════════════════════════════════════╗
+║                                                       ║
+║   Health Score                                        ║
+║                                                       ║
+║     A  100/100  Excellent                             ║
+║                                                       ║
+║     metadata       ████████████████████ 20/20  100%   ║
+║     files          ████████████████████ 20/20  100%   ║
+║     dependencies   ████████████████████ 25/25  100%   ║
+║     scripts        ████████████████████ 15/15  100%   ║
+║     fileHygiene    ████████████████████ 10/10  100%   ║
+║     bonus          ████████████████████ 10/10  100%   ║
+║                                                       ║
+╚═══════════════════════════════════════════════════════╝
+
+📁 Project Overview
+────────────────────────────────────────────────────────────
+  Name            devpulse-healthy-demo
+  Version         1.0.0
+  License         MIT
+  Dependencies    2 production, 2 dev
+  Scripts         5 defined
+  Files scanned   14 files in 2 dirs
+
+📂 Missing Files
+────────────────────────────────────────────────────────────
+  ✔ All recommended files are present.
+
+📦 Dependency Health
+────────────────────────────────────────────────────────────
+  ✔ No dependency issues detected.
+
+🔍 Unused Dependencies
+────────────────────────────────────────────────────────────
+  ✔ No unused production dependencies detected.
+
+⚙  npm Scripts
+────────────────────────────────────────────────────────────
+  ✔ All recommended scripts are present. No dangerous patterns found.
+
+📊 File Size Report
+────────────────────────────────────────────────────────────
+  Total source size:  1.6 KB across 5 files
+  ✔ No oversized source files found.
+
+────────────────────────────────────────────────────────────
+────────────────────────────────────────────────────────────
+

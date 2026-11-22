@@ -1,0 +1,239 @@
+
+================================================================
+            DevPulse Comprehensive Demonstration Suite           
+        Auditing Real Node.js Projects with kriti-devpulse       
+================================================================
+
+This runner executes the published "kriti-devpulse" CLI auditor against
+three representative Node.js sample projects to demonstrate how DevPulse
+evaluates health scores and detects real-world project risks.
+
+
+────────────────────────────────────────────────────────────────
+[1/3] Demo 1: Healthy Node.js Microservice
+Path: /Users/kritimaurya/Documents/PROJECTS/DevPulse-Demo/demo-projects/healthy-project
+Context: A fully configured project with complete metadata, clean dependencies, documentation, and tooling.
+Expected Result: 100 (Grade A)
+────────────────────────────────────────────────────────────────
+
+
+╭──────────────────────────────────────────────────────────────────────────────╮│                                                                              ││   DevPulse  |  devpulse-healthy-demo@1.0.0                                   ││   /Users/kritimaurya/Documents/PROJECTS/DevPulse-Demo/demo-projects/health   ││   y-project                                                                  ││                                                                              │╰──────────────────────────────────────────────────────────────────────────────╯
+
+╔═══════════════════════════════════════════════════════╗
+║                                                       ║
+║   Health Score                                        ║
+║                                                       ║
+║     A  100/100  Excellent                             ║
+║                                                       ║
+║     metadata       ████████████████████ 20/20  100%   ║
+║     files          ████████████████████ 20/20  100%   ║
+║     dependencies   ████████████████████ 25/25  100%   ║
+║     scripts        ████████████████████ 15/15  100%   ║
+║     fileHygiene    ████████████████████ 10/10  100%   ║
+║     bonus          ████████████████████ 10/10  100%   ║
+║                                                       ║
+╚═══════════════════════════════════════════════════════╝
+
+📁 Project Overview
+────────────────────────────────────────────────────────────
+  Name            devpulse-healthy-demo
+  Version         1.0.0
+  License         MIT
+  Dependencies    2 production, 2 dev
+  Scripts         5 defined
+  Files scanned   14 files in 2 dirs
+
+📂 Missing Files
+────────────────────────────────────────────────────────────
+  ✔ All recommended files are present.
+
+📦 Dependency Health
+────────────────────────────────────────────────────────────
+  ✔ No dependency issues detected.
+
+🔍 Unused Dependencies
+────────────────────────────────────────────────────────────
+  ✔ No unused production dependencies detected.
+
+⚙  npm Scripts
+────────────────────────────────────────────────────────────
+  ✔ All recommended scripts are present. No dangerous patterns found.
+
+📊 File Size Report
+────────────────────────────────────────────────────────────
+  Total source size:  1.6 KB across 5 files
+  ✔ No oversized source files found.
+
+────────────────────────────────────────────────────────────
+────────────────────────────────────────────────────────────
+
+
+────────────────────────────────────────────────────────────────
+[2/3] Demo 2: Warning Project (Technical Debt)
+Path: /Users/kritimaurya/Documents/PROJECTS/DevPulse-Demo/demo-projects/warning-project
+Context: An active project with duplicate dependencies, unused packages, missing engine declarations, and moderate file size warnings.
+Expected Result: ~74 (Grade C)
+────────────────────────────────────────────────────────────────
+
+
+╭──────────────────────────────────────────────────────────────────────────────╮│                                                                              ││   DevPulse  |  devpulse-warning-demo@0.4.1                                   ││   /Users/kritimaurya/Documents/PROJECTS/DevPulse-Demo/demo-projects/warnin   ││   g-project                                                                  ││                                                                              │╰──────────────────────────────────────────────────────────────────────────────╯
+
+╔═══════════════════════════════════════════════════════╗
+║                                                       ║
+║   Health Score                                        ║
+║                                                       ║
+║     C  74/100  Fair                                   ║
+║                                                       ║
+║     metadata       ███████████████░░░░░ 15/20  75%    ║
+║     files          ██████████████░░░░░░ 14/20  70%    ║
+║     dependencies   ███████████████░░░░░ 19/25  76%    ║
+║     scripts        ████████████████████ 15/15  100%   ║
+║     fileHygiene    ██████████████████░░ 9/10  90%     ║
+║     bonus          ████░░░░░░░░░░░░░░░░ 2/10  20%     ║
+║                                                       ║
+╚═══════════════════════════════════════════════════════╝
+
+📁 Project Overview
+────────────────────────────────────────────────────────────
+  Name            devpulse-warning-demo
+  Version         0.4.1
+  License         Apache-2.0
+  Dependencies    3 production, 1 dev
+  Scripts         2 defined
+  Files scanned   7 files in 2 dirs
+
+📂 Missing Files
+────────────────────────────────────────────────────────────
+  ℹ .npmignore             controls what lands in the npm tarball
+  ℹ CHANGELOG.md           helps users track changes between versions
+  ℹ CONTRIBUTING.md        guides external contributors
+  ℹ .editorconfig          enforces consistent code style in editors
+  ℹ .prettierrc            Prettier config missing
+  ℹ jest.config.js         Jest config file absent (may be in package.json)
+
+📦 Dependency Health
+────────────────────────────────────────────────────────────
+  ⚠ lodash                       "lodash" appears in both dependencies and devDependencies.
+
+🔍 Unused Dependencies
+────────────────────────────────────────────────────────────
+  1 potentially unused package(s):
+  ℹ axios
+
+⚙  npm Scripts
+────────────────────────────────────────────────────────────
+  ℹ Missing "build"                "build" script is expected for compiled or bundled projects.
+  ℹ Missing "lint"                 "lint" script enables automated code quality checks.
+  ℹ Missing "prepare"              "prepare" runs before packing/publishing.
+
+📊 File Size Report
+────────────────────────────────────────────────────────────
+  Total source size:  164.5 KB across 3 files
+  ✔ No oversized source files found.
+
+────────────────────────────────────────────────────────────
+💡 Tips
+  💡 Add an "engines" field to package.json to declare Node.js requirements.
+────────────────────────────────────────────────────────────
+
+
+────────────────────────────────────────────────────────────────
+[3/3] Demo 3: Unhealthy Project (Critical Issues)
+Path: /Users/kritimaurya/Documents/PROJECTS/DevPulse-Demo/demo-projects/unhealthy-project
+Context: A neglected project missing README/LICENSE/.gitignore, containing dangerous version ranges, deprecated libraries, and insecure scripts.
+Expected Result: ~30 (Grade F)
+────────────────────────────────────────────────────────────────
+
+
+╭──────────────────────────────────────────────────────────────────────────────╮│                                                                              ││   DevPulse  |  devpulse-unhealthy-demo@0.0.1                                 ││   /Users/kritimaurya/Documents/PROJECTS/DevPulse-Demo/demo-projects/unheal   ││   thy-project                                                                ││                                                                              │╰──────────────────────────────────────────────────────────────────────────────╯
+
+╔═════════════════════════════════════════════════════╗
+║                                                     ║
+║   Health Score                                      ║
+║                                                     ║
+║     F  30/100  Critical                             ║
+║                                                     ║
+║     metadata       ████████░░░░░░░░░░░░ 8/20  40%   ║
+║     files          ████░░░░░░░░░░░░░░░░ 4/20  20%   ║
+║     dependencies   ███████░░░░░░░░░░░░░ 9/25  36%   ║
+║     scripts        ░░░░░░░░░░░░░░░░░░░░ 0/15  0%    ║
+║     fileHygiene    ██████████████░░░░░░ 7/10  70%   ║
+║     bonus          ████░░░░░░░░░░░░░░░░ 2/10  20%   ║
+║                                                     ║
+╚═════════════════════════════════════════════════════╝
+
+📁 Project Overview
+────────────────────────────────────────────────────────────
+  Name            devpulse-unhealthy-demo
+  Version         0.0.1
+  License         UNLICENSED
+  Dependencies    4 production, 1 dev
+  Scripts         2 defined
+  Files scanned   3 files in 1 dirs
+
+📂 Missing Files
+────────────────────────────────────────────────────────────
+  ⚠ README.md              documentation is strongly recommended
+  ⚠ .gitignore             prevents committing generated files
+  ℹ .npmignore             controls what lands in the npm tarball
+  ⚠ LICENSE                missing license may deter adoption
+  ℹ CHANGELOG.md           helps users track changes between versions
+  ℹ CONTRIBUTING.md        guides external contributors
+  ℹ .editorconfig          enforces consistent code style in editors
+  ℹ .eslintrc.js           ESLint config missing — linting may be unconfigured
+  ℹ .prettierrc            Prettier config missing
+  ℹ jest.config.js         Jest config file absent (may be in package.json)
+
+📦 Dependency Health
+────────────────────────────────────────────────────────────
+  ✖ express                      Dangerous version specifier "*" allows any version.
+  ⚠ lodash                       "lodash" appears in both dependencies and devDependencies.
+  ⚠ request                      DEPRECATED: Deprecated; use node-fetch, axios, or got instead.
+
+🔍 Unused Dependencies
+────────────────────────────────────────────────────────────
+  2 potentially unused package(s):
+  ℹ request
+  ℹ moment
+
+⚙  npm Scripts
+────────────────────────────────────────────────────────────
+  ⚠ Missing "start"                "start" script is the standard entry point for npm projects.
+  ⚠ Missing "test"                 "test" script is expected by most CI pipelines.
+  ℹ Missing "build"                "build" script is expected for compiled or bundled projects.
+  ℹ Missing "prepare"              "prepare" runs before packing/publishing.
+  ✖ Dangerous pattern "rm -rf /" in "clean"
+  ✖ Dangerous pattern "curl | shell" in "clean"
+
+📊 File Size Report
+────────────────────────────────────────────────────────────
+  Total source size:  546.2 KB across 3 files
+  Large files detected:
+  ⚠ src/legacy-bundle.js                     545.7 KB
+
+────────────────────────────────────────────────────────────
+💡 Tips
+  ⚡ Fix critical issues to improve your project health.
+  📝 Add a README.md to document your project.
+  💡 Add an "engines" field to package.json to declare Node.js requirements.
+────────────────────────────────────────────────────────────
+
+
+================================================================
+                  Demonstration Run Summary                      
+================================================================
+
+┌─────────┬───────────────────────────────────────┬───────────┬─────────────────┬──────────┬─────────────┐
+│ (index) │ title                                 │ score     │ grade           │ exitCode │ status      │
+├─────────┼───────────────────────────────────────┼───────────┼─────────────────┼──────────┼─────────────┤
+│ 0       │ 'Healthy Node.js Microservice'        │ '100/100' │ 'A (Excellent)' │ 0        │ 'Completed' │
+│ 1       │ 'Warning Project (Technical Debt)'    │ '74/100'  │ 'C (Fair)'      │ 0        │ 'Completed' │
+│ 2       │ 'Unhealthy Project (Critical Issues)' │ '30/100'  │ 'F (Critical)'  │ 0        │ 'Completed' │
+└─────────┴───────────────────────────────────────┴───────────┴─────────────────┴──────────┴─────────────┘
+JSON reports saved to:
+ - reports/healthy-project-report.json
+ - reports/warning-project-report.json
+ - reports/unhealthy-project-report.json
+
+Demonstration suite execution finished successfully.
+

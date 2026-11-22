@@ -1,0 +1,61 @@
+
+╭──────────────────────────────────────────────────────────────────────────────╮│                                                                              ││   DevPulse  |  devpulse-warning-demo@0.4.1                                   ││   /Users/kritimaurya/Documents/PROJECTS/DevPulse-Demo/demo-projects/warnin   ││   g-project                                                                  ││                                                                              │╰──────────────────────────────────────────────────────────────────────────────╯
+
+╔═══════════════════════════════════════════════════════╗
+║                                                       ║
+║   Health Score                                        ║
+║                                                       ║
+║     C  74/100  Fair                                   ║
+║                                                       ║
+║     metadata       ███████████████░░░░░ 15/20  75%    ║
+║     files          ██████████████░░░░░░ 14/20  70%    ║
+║     dependencies   ███████████████░░░░░ 19/25  76%    ║
+║     scripts        ████████████████████ 15/15  100%   ║
+║     fileHygiene    ██████████████████░░ 9/10  90%     ║
+║     bonus          ████░░░░░░░░░░░░░░░░ 2/10  20%     ║
+║                                                       ║
+╚═══════════════════════════════════════════════════════╝
+
+📁 Project Overview
+────────────────────────────────────────────────────────────
+  Name            devpulse-warning-demo
+  Version         0.4.1
+  License         Apache-2.0
+  Dependencies    3 production, 1 dev
+  Scripts         2 defined
+  Files scanned   7 files in 2 dirs
+
+📂 Missing Files
+────────────────────────────────────────────────────────────
+  ℹ .npmignore             controls what lands in the npm tarball
+  ℹ CHANGELOG.md           helps users track changes between versions
+  ℹ CONTRIBUTING.md        guides external contributors
+  ℹ .editorconfig          enforces consistent code style in editors
+  ℹ .prettierrc            Prettier config missing
+  ℹ jest.config.js         Jest config file absent (may be in package.json)
+
+📦 Dependency Health
+────────────────────────────────────────────────────────────
+  ⚠ lodash                       "lodash" appears in both dependencies and devDependencies.
+
+🔍 Unused Dependencies
+────────────────────────────────────────────────────────────
+  1 potentially unused package(s):
+  ℹ axios
+
+⚙  npm Scripts
+────────────────────────────────────────────────────────────
+  ℹ Missing "build"                "build" script is expected for compiled or bundled projects.
+  ℹ Missing "lint"                 "lint" script enables automated code quality checks.
+  ℹ Missing "prepare"              "prepare" runs before packing/publishing.
+
+📊 File Size Report
+────────────────────────────────────────────────────────────
+  Total source size:  164.5 KB across 3 files
+  ✔ No oversized source files found.
+
+────────────────────────────────────────────────────────────
+💡 Tips
+  💡 Add an "engines" field to package.json to declare Node.js requirements.
+────────────────────────────────────────────────────────────
+

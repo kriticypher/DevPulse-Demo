@@ -1,0 +1,74 @@
+
+╭──────────────────────────────────────────────────────────────────────────────╮│                                                                              ││   DevPulse  |  devpulse-unhealthy-demo@0.0.1                                 ││   /Users/kritimaurya/Documents/PROJECTS/DevPulse-Demo/demo-projects/unheal   ││   thy-project                                                                ││                                                                              │╰──────────────────────────────────────────────────────────────────────────────╯
+
+╔═════════════════════════════════════════════════════╗
+║                                                     ║
+║   Health Score                                      ║
+║                                                     ║
+║     F  30/100  Critical                             ║
+║                                                     ║
+║     metadata       ████████░░░░░░░░░░░░ 8/20  40%   ║
+║     files          ████░░░░░░░░░░░░░░░░ 4/20  20%   ║
+║     dependencies   ███████░░░░░░░░░░░░░ 9/25  36%   ║
+║     scripts        ░░░░░░░░░░░░░░░░░░░░ 0/15  0%    ║
+║     fileHygiene    ██████████████░░░░░░ 7/10  70%   ║
+║     bonus          ████░░░░░░░░░░░░░░░░ 2/10  20%   ║
+║                                                     ║
+╚═════════════════════════════════════════════════════╝
+
+📁 Project Overview
+────────────────────────────────────────────────────────────
+  Name            devpulse-unhealthy-demo
+  Version         0.0.1
+  License         UNLICENSED
+  Dependencies    4 production, 1 dev
+  Scripts         2 defined
+  Files scanned   3 files in 1 dirs
+
+📂 Missing Files
+────────────────────────────────────────────────────────────
+  ⚠ README.md              documentation is strongly recommended
+  ⚠ .gitignore             prevents committing generated files
+  ℹ .npmignore             controls what lands in the npm tarball
+  ⚠ LICENSE                missing license may deter adoption
+  ℹ CHANGELOG.md           helps users track changes between versions
+  ℹ CONTRIBUTING.md        guides external contributors
+  ℹ .editorconfig          enforces consistent code style in editors
+  ℹ .eslintrc.js           ESLint config missing — linting may be unconfigured
+  ℹ .prettierrc            Prettier config missing
+  ℹ jest.config.js         Jest config file absent (may be in package.json)
+
+📦 Dependency Health
+────────────────────────────────────────────────────────────
+  ✖ express                      Dangerous version specifier "*" allows any version.
+  ⚠ lodash                       "lodash" appears in both dependencies and devDependencies.
+  ⚠ request                      DEPRECATED: Deprecated; use node-fetch, axios, or got instead.
+
+🔍 Unused Dependencies
+────────────────────────────────────────────────────────────
+  2 potentially unused package(s):
+  ℹ request
+  ℹ moment
+
+⚙  npm Scripts
+────────────────────────────────────────────────────────────
+  ⚠ Missing "start"                "start" script is the standard entry point for npm projects.
+  ⚠ Missing "test"                 "test" script is expected by most CI pipelines.
+  ℹ Missing "build"                "build" script is expected for compiled or bundled projects.
+  ℹ Missing "prepare"              "prepare" runs before packing/publishing.
+  ✖ Dangerous pattern "rm -rf /" in "clean"
+  ✖ Dangerous pattern "curl | shell" in "clean"
+
+📊 File Size Report
+────────────────────────────────────────────────────────────
+  Total source size:  546.2 KB across 3 files
+  Large files detected:
+  ⚠ src/legacy-bundle.js                     545.7 KB
+
+────────────────────────────────────────────────────────────
+💡 Tips
+  ⚡ Fix critical issues to improve your project health.
+  📝 Add a README.md to document your project.
+  💡 Add an "engines" field to package.json to declare Node.js requirements.
+────────────────────────────────────────────────────────────
+
