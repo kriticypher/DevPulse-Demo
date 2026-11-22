@@ -5,6 +5,7 @@
   "main": "scripts/run-all-demos.js",
   "scripts": {
     "setup": "node scripts/setup-demo.js",
+    "test": "node scripts/test-demos.js",
     "demo:healthy": "npx kriti-devpulse audit ./demo-projects/healthy-project",
     "demo:warning": "npx kriti-devpulse audit ./demo-projects/warning-project",
     "demo:unhealthy": "npx kriti-devpulse audit ./demo-projects/unhealthy-project",
