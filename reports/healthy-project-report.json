@@ -1,0 +1,52 @@
+{
+  "tool": "kriti-devpulse",
+  "version": "1.0.0",
+  "timestamp": "2026-11-22T15:49:32.749Z",
+  "target": "/Users/kritimaurya/Documents/PROJECTS/DevPulse-Demo/demo-projects/healthy-project",
+  "score": {
+    "value": 100,
+    "grade": "A",
+    "label": "Excellent",
+    "breakdown": {
+      "metadata": 20,
+      "files": 20,
+      "dependencies": 25,
+      "scripts": 15,
+      "fileHygiene": 10,
+      "bonus": 10
+    }
+  },
+  "summary": {
+    "totalFiles": 14,
+    "totalDirs": 2,
+    "extensions": {
+      "(no ext)": 5,
+      ".json": 2,
+      ".md": 3,
+      ".js": 3,
+      ".ts": 1
+    },
+    "dependencies": 2,
+    "devDependencies": 2,
+    "scripts": 5
+  },
+  "findings": {
+    "missingFiles": [],
+    "dependencyIssues": [],
+    "dependencyWarnings": [],
+    "deprecatedPackages": [],
+    "unusedDependencies": [],
+    "scriptIssues": [],
+    "largeFiles": []
+  },
+  "metadata": {
+    "name": "devpulse-healthy-demo",
+    "version": "1.0.0",
+    "license": "MIT",
+    "author": "Kriti Maurya <mkritimaurya1@gmail.com>",
+    "engines": {
+      "node": ">=18.0.0",
+      "npm": ">=9.0.0"
+    }
+  }
+}

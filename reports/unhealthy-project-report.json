@@ -1,0 +1,155 @@
+{
+  "tool": "kriti-devpulse",
+  "version": "1.0.0",
+  "timestamp": "2026-11-22T15:49:33.167Z",
+  "target": "/Users/kritimaurya/Documents/PROJECTS/DevPulse-Demo/demo-projects/unhealthy-project",
+  "score": {
+    "value": 30,
+    "grade": "F",
+    "label": "Critical",
+    "breakdown": {
+      "metadata": 8,
+      "files": 4,
+      "dependencies": 9,
+      "scripts": 0,
+      "fileHygiene": 7,
+      "bonus": 2
+    }
+  },
+  "summary": {
+    "totalFiles": 3,
+    "totalDirs": 1,
+    "extensions": {
+      ".json": 1,
+      ".js": 2
+    },
+    "dependencies": 4,
+    "devDependencies": 1,
+    "scripts": 2
+  },
+  "findings": {
+    "missingFiles": [
+      {
+        "file": "README.md",
+        "severity": "warning",
+        "reason": "documentation is strongly recommended",
+        "category": "required"
+      },
+      {
+        "file": ".gitignore",
+        "severity": "warning",
+        "reason": "prevents committing generated files",
+        "category": "recommended"
+      },
+      {
+        "file": ".npmignore",
+        "severity": "info",
+        "reason": "controls what lands in the npm tarball",
+        "category": "recommended"
+      },
+      {
+        "file": "LICENSE",
+        "severity": "warning",
+        "reason": "missing license may deter adoption",
+        "category": "recommended"
+      },
+      {
+        "file": "CHANGELOG.md",
+        "severity": "info",
+        "reason": "helps users track changes between versions",
+        "category": "recommended"
+      },
+      {
+        "file": "CONTRIBUTING.md",
+        "severity": "info",
+        "reason": "guides external contributors",
+        "category": "recommended"
+      },
+      {
+        "file": ".editorconfig",
+        "severity": "info",
+        "reason": "enforces consistent code style in editors",
+        "category": "recommended"
+      },
+      {
+        "file": ".eslintrc.js",
+        "severity": "info",
+        "reason": "ESLint config missing — linting may be unconfigured",
+        "category": "tooling"
+      },
+      {
+        "file": ".prettierrc",
+        "severity": "info",
+        "reason": "Prettier config missing",
+        "category": "tooling"
+      },
+      {
+        "file": "jest.config.js",
+        "severity": "info",
+        "reason": "Jest config file absent (may be in package.json)",
+        "category": "tooling"
+      }
+    ],
+    "dependencyIssues": [
+      {
+        "name": "express",
+        "spec": "*",
+        "reason": "Dangerous version specifier \"*\" allows any version."
+      }
+    ],
+    "dependencyWarnings": [
+      {
+        "name": "lodash",
+        "reason": "\"lodash\" appears in both dependencies and devDependencies."
+      }
+    ],
+    "deprecatedPackages": [
+      {
+        "name": "request",
+        "spec": "^2.88.2",
+        "advice": "Deprecated; use node-fetch, axios, or got instead."
+      }
+    ],
+    "unusedDependencies": [
+      "request",
+      "moment"
+    ],
+    "scriptIssues": [
+      {
+        "name": "start",
+        "severity": "warning",
+        "reason": "\"start\" script is the standard entry point for npm projects."
+      },
+      {
+        "name": "test",
+        "severity": "warning",
+        "reason": "\"test\" script is expected by most CI pipelines."
+      },
+      {
+        "name": "build",
+        "severity": "info",
+        "reason": "\"build\" script is expected for compiled or bundled projects."
+      },
+      {
+        "name": "prepare",
+        "severity": "info",
+        "reason": "\"prepare\" runs before packing/publishing."
+      }
+    ],
+    "largeFiles": [
+      {
+        "file": "src/legacy-bundle.js",
+        "size": 558800,
+        "human": "545.7 KB",
+        "severity": "warning"
+      }
+    ]
+  },
+  "metadata": {
+    "name": "devpulse-unhealthy-demo",
+    "version": "0.0.1",
+    "license": "UNLICENSED",
+    "author": "",
+    "engines": {}
+  }
+}
